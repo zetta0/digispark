@@ -1,0 +1,56 @@
+//This DigiSpark script is for Chromebook Powerwashing
+#include "DigiKeyboard.h"
+void setup() {
+}
+
+void loop() {
+  DigiKeyboard.delay(1000);
+  DigiKeyboard.delay(1000);
+  DigiKeyboard.sendKeyStroke(KEY_ENTER);
+  DigiKeyboard.delay(1000);
+  DigiKeyboard.sendKeyStroke(KEY_TAB);
+  DigiKeyboard.sendKeyStroke(KEY_DOWN_ARROW);
+  DigiKeyboard.sendKeyStroke(KEY_DOWN_ARROW);
+  DigiKeyboard.sendKeyStroke(KEY_DOWN_ARROW);
+  DigiKeyboard.sendKeyStroke(KEY_DOWN_ARROW);
+  DigiKeyboard.sendKeyStroke(KEY_DOWN_ARROW);
+  DigiKeyboard.sendKeyStroke(KEY_DOWN_ARROW);
+  DigiKeyboard.sendKeyStroke(KEY_DOWN_ARROW);
+  DigiKeyboard.sendKeyStroke(KEY_DOWN_ARROW);
+  DigiKeyboard.sendKeyStroke(KEY_DOWN_ARROW);
+  DigiKeyboard.sendKeyStroke(KEY_DOWN_ARROW);
+  DigiKeyboard.sendKeyStroke(KEY_ENTER);
+  DigiKeyboard.delay(1000);
+  DigiKeyboard.print(SSID);
+  DigiKeyboard.delay(1000);
+  DigiKeyboard.sendKeyStroke(KEY_TAB);
+  DigiKeyboard.sendKeyStroke(KEY_DOWN_ARROW);
+  DigiKeyboard.sendKeyStroke(KEY_DOWN_ARROW);
+  DigiKeyboard.sendKeyStroke(KEY_TAB);
+  DigiKeyboard.delay(500);
+  DigiKeyboard.print(PASSWORD);
+  DigiKeyboard.delay(1000);
+  DigiKeyboard.sendKeyStroke(KEY_ENTER);
+  DigiKeyboard.delay(9000);
+  DigiKeyboard.sendKeyStroke(KEY_TAB);
+  DigiKeyboard.sendKeyStroke(KEY_ENTER);
+  DigiKeyboard.delay(3000);
+  DigiKeyboard.sendKeyStroke(KEY_TAB , MOD_SHIFT_LEFT);
+  DigiKeyboard.sendKeyStroke(KEY_TAB);
+  DigiKeyboard.sendKeyStroke(KEY_TAB);
+  DigiKeyboard.sendKeyStroke(KEY_TAB);
+  DigiKeyboard.sendKeyStroke(KEY_TAB);
+  DigiKeyboard.sendKeyStroke(KEY_TAB);
+  DigiKeyboard.sendKeyStroke(KEY_ENTER);
+  DigiKeyboard.delay(9000);
+  DigiKeyboard.delay(5000);
+  DigiKeyboard.sendKeyStroke(KEY_ENTER);
+  DigiKeyboard.delay(9000);
+  DigiKeyboard.print(USER);
+  DigiKeyboard.sendKeyStroke(KEY_ENTER);
+  DigiKeyboard.delay(6000);
+  DigiKeyboard.print(PASS);
+ for (;;) {
+ /*empty*/
+}
+}
