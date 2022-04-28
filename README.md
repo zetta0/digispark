@@ -5,7 +5,7 @@
 Download Arduino Studio: https://www.arduino.cc/en/software
 
 
-Preferences > Additional Manager > http://digistump.com/package_digistump_index.json
+Preferences > Additional Boards Manager URL (copy and paste following url here) > http://digistump.com/package_digistump_index.json
 
 Go to the “Tools” menu and then the “Board” submenu - select “Boards Manager” and then from the type drop down select “Contributed”:
 Select the “Digistump AVR Boards” package and click the “Install” button.
