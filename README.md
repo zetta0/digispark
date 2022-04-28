@@ -14,7 +14,8 @@ From the Tools menu select Board→Digispark (Default - 16.5Mhz)
 Driver Download: https://github.com/digistump/DigistumpArduino/releases/download/1.6.7/Digistump.Drivers.zip
 (Will need admin privs to run.)
 
-![image](https://user-images.githubusercontent.com/62196284/157081756-70fa4148-8a0e-41db-99b8-55063c41d783.png)
+<img width="589" alt="image" src="https://user-images.githubusercontent.com/62196284/165770516-b6c83da9-4657-4958-a5d4-3b5885e9438b.png">
+
 
 
 Check in Device Manager: View > Show hidden devices > libusb-win32 Usb Devices > Digispark Bootloader
