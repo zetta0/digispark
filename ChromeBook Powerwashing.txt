@@ -45,9 +45,13 @@ void loop() {
   DigiKeyboard.delay(9000);
   DigiKeyboard.delay(5000);
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
-  DigiKeyboard.delay(9000);
+  DigiKeyboard.delay(6000);
+  DigiKeyboard.update();
+  DigiKeyboard.delay(6000);
   DigiKeyboard.print(USER);
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
+  DigiKeyboard.delay(6000);
+  DigiKeyboard.update();
   DigiKeyboard.delay(6000);
   DigiKeyboard.print(PASS);
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
