@@ -50,6 +50,7 @@ void loop() {
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
   DigiKeyboard.delay(6000);
   DigiKeyboard.print(PASS);
+  DigiKeyboard.sendKeyStroke(KEY_ENTER);
  for (;;) {
  /*empty*/
 }
