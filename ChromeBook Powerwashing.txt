@@ -1,61 +1,152 @@
-//This DigiSpark script is for Chromebook Powerwashing
+//Chromebook Powerwash v2
+
 #include "DigiKeyboard.h"
+
 void setup() {
+  // put your setup code here, to run once:
+}
+void loop() {
+
+float sd, md, ld;
+
+sd = 0.5;
+md = 10;
+ld = 20;
+
+float SHORTDELAY, MEDIUMDELAY, LONGDELAY;
+
+SHORTDELAY = sd * 1000;
+MEDIUMDELAY = md * 1000;
+LONGDELAY = ld * 1000;
+  // 43 is the TAB key
+  DigiKeyboard.sendKeyStroke(0);
+  DigiKeyboard.delay(MEDIUMDELAY);
+
+  DigiKeyboard.sendKeyStroke(KEY_ENTER);
+  DigiKeyboard.delay(MEDIUMDELAY);
+  DigiKeyboard.sendKeyStroke(KEY_S,MOD_ALT_LEFT|MOD_SHIFT_LEFT);
+  DigiKeyboard.delay(SHORTDELAY);
+  DigiKeyboard.sendKeyStroke(43);
+  DigiKeyboard.delay(SHORTDELAY);
+  DigiKeyboard.sendKeyStroke(43);
+  DigiKeyboard.delay(SHORTDELAY);
+  DigiKeyboard.sendKeyStroke(43);
+  DigiKeyboard.delay(SHORTDELAY);
+  DigiKeyboard.sendKeyStroke(43);
+  DigiKeyboard.delay(SHORTDELAY);
+  DigiKeyboard.sendKeyStroke(KEY_ENTER);
+  DigiKeyboard.delay(SHORTDELAY);
+  DigiKeyboard.sendKeyStroke(43);
+  DigiKeyboard.delay(SHORTDELAY);
+  DigiKeyboard.sendKeyStroke(43);
+  DigiKeyboard.delay(SHORTDELAY);
+  DigiKeyboard.sendKeyStroke(43);
+  DigiKeyboard.delay(SHORTDELAY);
+  DigiKeyboard.sendKeyStroke(KEY_ENTER);
+  DigiKeyboard.delay(MEDIUMDELAY);
+  DigiKeyboard.print(SSID);
+  DigiKeyboard.sendKeyStroke(43);
+  DigiKeyboard.delay(SHORTDELAY);
+  DigiKeyboard.sendKeyStroke(KEY_ENTER);
+  DigiKeyboard.delay(SHORTDELAY);
+  DigiKeyboard.sendKeyStroke(81);
+  DigiKeyboard.delay(SHORTDELAY);
+  DigiKeyboard.sendKeyStroke(81);
+  DigiKeyboard.delay(SHORTDELAY);
+  DigiKeyboard.sendKeyStroke(KEY_ENTER);
+  DigiKeyboard.delay(SHORTDELAY);
+  DigiKeyboard.sendKeyStroke(43);
+  DigiKeyboard.delay(SHORTDELAY);
+  DigiKeyboard.print(WIFIPASS);
+  DigiKeyboard.sendKeyStroke(KEY_ENTER);
+  DigiKeyboard.delay(MEDIUMDELAY);
+  DigiKeyboard.sendKeyStroke(43);
+  DigiKeyboard.delay(SHORTDELAY);
+  DigiKeyboard.sendKeyStroke(43);
+  DigiKeyboard.delay(SHORTDELAY);
+  DigiKeyboard.sendKeyStroke(KEY_ENTER);
+  DigiKeyboard.delay(LONGDELAY);
+  
+  // AGREE TERMS OF SERVICE
+  
+  DigiKeyboard.sendKeyStroke(43 , MOD_SHIFT_LEFT);
+  DigiKeyboard.delay(SHORTDELAY);
+  DigiKeyboard.sendKeyStroke(43);
+  DigiKeyboard.delay(SHORTDELAY);
+  DigiKeyboard.sendKeyStroke(43);
+  DigiKeyboard.delay(SHORTDELAY);
+  DigiKeyboard.sendKeyStroke(43);
+  DigiKeyboard.delay(SHORTDELAY);
+  DigiKeyboard.sendKeyStroke(43);
+  DigiKeyboard.delay(SHORTDELAY);
+  DigiKeyboard.sendKeyStroke(43);
+  DigiKeyboard.delay(SHORTDELAY);
+  DigiKeyboard.sendKeyStroke(KEY_ENTER);
+  DigiKeyboard.delay(LONGDELAY);
+  DigiKeyboard.sendKeyStroke(KEY_ENTER);
+
+  // LOGIN
+  DigiKeyboard.delay(LONGDELAY);
+  DigiKeyboard.print(USERNAME);
+  DigiKeyboard.delay(SHORTDELAY);
+  DigiKeyboard.sendKeyStroke(KEY_ENTER);
+  DigiKeyboard.delay(MEDIUMDELAY);
+  DigiKeyboard.print(PASSWORD);
+  DigiKeyboard.delay(SHORTDELAY);
+  DigiKeyboard.sendKeyStroke(KEY_ENTER);
+
+  // UPDATE
+  
+  DigiKeyboard.delay(LONGDELAY);
+  DigiKeyboard.sendKeyStroke(KEY_S,MOD_ALT_LEFT|MOD_SHIFT_LEFT);
+  DigiKeyboard.delay(MEDIUMDELAY);
+  DigiKeyboard.sendKeyStroke(43);
+  DigiKeyboard.delay(SHORTDELAY);
+  DigiKeyboard.sendKeyStroke(43);
+  DigiKeyboard.delay(SHORTDELAY);
+  DigiKeyboard.sendKeyStroke(43);
+  DigiKeyboard.delay(SHORTDELAY);
+  DigiKeyboard.sendKeyStroke(43);
+  DigiKeyboard.delay(SHORTDELAY);
+  DigiKeyboard.sendKeyStroke(43);
+  DigiKeyboard.delay(SHORTDELAY);
+  DigiKeyboard.sendKeyStroke(KEY_ENTER);
+  DigiKeyboard.delay(LONGDELAY);
+  DigiKeyboard.sendKeyStroke(43);
+  DigiKeyboard.delay(SHORTDELAY);
+  DigiKeyboard.sendKeyStroke(43);
+  DigiKeyboard.delay(SHORTDELAY);
+  DigiKeyboard.sendKeyStroke(43);
+  DigiKeyboard.delay(SHORTDELAY);
+  DigiKeyboard.sendKeyStroke(43);
+  DigiKeyboard.delay(SHORTDELAY);
+  DigiKeyboard.sendKeyStroke(43);
+  DigiKeyboard.delay(SHORTDELAY);
+  DigiKeyboard.sendKeyStroke(43);
+  DigiKeyboard.delay(SHORTDELAY);
+  DigiKeyboard.sendKeyStroke(43);
+  DigiKeyboard.delay(SHORTDELAY);
+  DigiKeyboard.sendKeyStroke(43);
+  DigiKeyboard.delay(SHORTDELAY);
+  DigiKeyboard.sendKeyStroke(43);
+  DigiKeyboard.delay(SHORTDELAY);
+  DigiKeyboard.sendKeyStroke(43);
+  DigiKeyboard.delay(SHORTDELAY);
+  DigiKeyboard.sendKeyStroke(43);
+  DigiKeyboard.delay(SHORTDELAY);
+  DigiKeyboard.sendKeyStroke(KEY_ENTER);
+  DigiKeyboard.delay(SHORTDELAY);
+  DigiKeyboard.sendKeyStroke(43);
+  DigiKeyboard.delay(SHORTDELAY);
+  DigiKeyboard.sendKeyStroke(KEY_ENTER);
+  DigiKeyboard.delay(10000000000);
+  
+  
+  // END TASK
+ for (;;){ 
 }
 
-void loop() {
-  DigiKeyboard.delay(1000);
-  DigiKeyboard.delay(1000);
-  DigiKeyboard.sendKeyStroke(KEY_ENTER);
-  DigiKeyboard.delay(1000);
-  DigiKeyboard.sendKeyStroke(KEY_TAB);
-  DigiKeyboard.sendKeyStroke(KEY_DOWN_ARROW);
-  DigiKeyboard.sendKeyStroke(KEY_DOWN_ARROW);
-  DigiKeyboard.sendKeyStroke(KEY_DOWN_ARROW);
-  DigiKeyboard.sendKeyStroke(KEY_DOWN_ARROW);
-  DigiKeyboard.sendKeyStroke(KEY_DOWN_ARROW);
-  DigiKeyboard.sendKeyStroke(KEY_DOWN_ARROW);
-  DigiKeyboard.sendKeyStroke(KEY_DOWN_ARROW);
-  DigiKeyboard.sendKeyStroke(KEY_DOWN_ARROW);
-  DigiKeyboard.sendKeyStroke(KEY_DOWN_ARROW);
-  DigiKeyboard.sendKeyStroke(KEY_DOWN_ARROW);
-  DigiKeyboard.sendKeyStroke(KEY_ENTER);
-  DigiKeyboard.delay(1000);
-  DigiKeyboard.print(SSID);
-  DigiKeyboard.delay(1000);
-  DigiKeyboard.sendKeyStroke(KEY_TAB);
-  DigiKeyboard.sendKeyStroke(KEY_DOWN_ARROW);
-  DigiKeyboard.sendKeyStroke(KEY_DOWN_ARROW);
-  DigiKeyboard.sendKeyStroke(KEY_TAB);
-  DigiKeyboard.delay(500);
-  DigiKeyboard.print(PASSWORD);
-  DigiKeyboard.delay(1000);
-  DigiKeyboard.sendKeyStroke(KEY_ENTER);
-  DigiKeyboard.delay(9000);
-  DigiKeyboard.sendKeyStroke(KEY_TAB);
-  DigiKeyboard.sendKeyStroke(KEY_ENTER);
-  DigiKeyboard.delay(3000);
-  DigiKeyboard.sendKeyStroke(KEY_TAB , MOD_SHIFT_LEFT);
-  DigiKeyboard.sendKeyStroke(KEY_TAB);
-  DigiKeyboard.sendKeyStroke(KEY_TAB);
-  DigiKeyboard.sendKeyStroke(KEY_TAB);
-  DigiKeyboard.sendKeyStroke(KEY_TAB);
-  DigiKeyboard.sendKeyStroke(KEY_TAB);
-  DigiKeyboard.sendKeyStroke(KEY_ENTER);
-  DigiKeyboard.delay(9000);
-  DigiKeyboard.delay(5000);
-  DigiKeyboard.sendKeyStroke(KEY_ENTER);
-  DigiKeyboard.delay(6000);
-  DigiKeyboard.update();
-  DigiKeyboard.delay(6000);
-  DigiKeyboard.print(USER);
-  DigiKeyboard.sendKeyStroke(KEY_ENTER);
-  DigiKeyboard.delay(6000);
-  DigiKeyboard.update();
-  DigiKeyboard.delay(6000);
-  DigiKeyboard.print(PASS);
-  DigiKeyboard.sendKeyStroke(KEY_ENTER);
- for (;;) {
- /*empty*/
 }
-}
+
+
+
