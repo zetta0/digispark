@@ -18,7 +18,9 @@ float SHORTDELAY, MEDIUMDELAY, LONGDELAY;
 SHORTDELAY = sd * 1000;
 MEDIUMDELAY = md * 1000;
 LONGDELAY = ld * 1000;
+
   // 43 is the TAB key
+  
   DigiKeyboard.sendKeyStroke(0);
   DigiKeyboard.delay(MEDIUMDELAY);
 
@@ -86,6 +88,7 @@ LONGDELAY = ld * 1000;
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
 
   // LOGIN
+  
   DigiKeyboard.delay(LONGDELAY);
   DigiKeyboard.print(USERNAME);
   DigiKeyboard.delay(SHORTDELAY);
@@ -98,6 +101,10 @@ LONGDELAY = ld * 1000;
   // UPDATE
   
   DigiKeyboard.delay(LONGDELAY);
+  DigiKeyboard.delay(LONGDELAY):
+  
+  // Delays are for load up time
+  
   DigiKeyboard.sendKeyStroke(KEY_S,MOD_ALT_LEFT|MOD_SHIFT_LEFT);
   DigiKeyboard.delay(MEDIUMDELAY);
   DigiKeyboard.sendKeyStroke(43);
