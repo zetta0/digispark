@@ -1,4 +1,4 @@
-//Chromebook Enrollment 0.1
+//Chromebook Enrollment 0.2
 
 #include "DigiKeyboard.h"
 
@@ -121,8 +121,67 @@ void loop() {
   DigiKeyboard.delay(MEDIUMDELAY);
   DigiKeyboard.print(ENROLLPASSWORD);
   DigiKeyboard.sendKeyStroke(KEY_ENTER);  
-  DigiKeyboard.delay(10000000000);
-
-  // END TASK
   
+
+  // LOGIN
+  
+  DigiKeyboard.delay(LONGDELAY);
+  DigiKeyboard.print(LOGINUSERNAME);
+  DigiKeyboard.delay(SHORTDELAY);
+  DigiKeyboard.sendKeyStroke(KEY_ENTER);
+  DigiKeyboard.delay(MEDIUMDELAY);
+  DigiKeyboard.print(LOGINPASSWORD);
+  DigiKeyboard.delay(SHORTDELAY);
+  DigiKeyboard.sendKeyStroke(KEY_ENTER);
+
+  // UPDATE
+
+  DigiKeyboard.delay(LONGDELAY);
+  DigiKeyboard.sendKeyStroke(KEY_S,MOD_ALT_LEFT|MOD_SHIFT_LEFT);
+  DigiKeyboard.delay(MEDIUMDELAY);
+  DigiKeyboard.sendKeyStroke(43);
+  DigiKeyboard.delay(SHORTDELAY);
+  DigiKeyboard.sendKeyStroke(43);
+  DigiKeyboard.delay(SHORTDELAY);
+  DigiKeyboard.sendKeyStroke(43);
+  DigiKeyboard.delay(SHORTDELAY);
+  DigiKeyboard.sendKeyStroke(43);
+  DigiKeyboard.delay(SHORTDELAY);
+  DigiKeyboard.sendKeyStroke(43);
+  DigiKeyboard.delay(SHORTDELAY);
+  DigiKeyboard.sendKeyStroke(KEY_ENTER);
+  DigiKeyboard.delay(LONGDELAY);
+  DigiKeyboard.sendKeyStroke(43);
+  DigiKeyboard.delay(SHORTDELAY);
+  DigiKeyboard.sendKeyStroke(43);
+  DigiKeyboard.delay(SHORTDELAY);
+  DigiKeyboard.sendKeyStroke(43);
+  DigiKeyboard.delay(SHORTDELAY);
+  DigiKeyboard.sendKeyStroke(43);
+  DigiKeyboard.delay(SHORTDELAY);
+  DigiKeyboard.sendKeyStroke(43);
+  DigiKeyboard.delay(SHORTDELAY);
+  DigiKeyboard.sendKeyStroke(43);
+  DigiKeyboard.delay(SHORTDELAY);
+  DigiKeyboard.sendKeyStroke(43);
+  DigiKeyboard.delay(SHORTDELAY);
+  DigiKeyboard.sendKeyStroke(43);
+  DigiKeyboard.delay(SHORTDELAY);
+  DigiKeyboard.sendKeyStroke(43);
+  DigiKeyboard.delay(SHORTDELAY);
+  DigiKeyboard.sendKeyStroke(43);
+  DigiKeyboard.delay(SHORTDELAY);
+  DigiKeyboard.sendKeyStroke(43);
+  DigiKeyboard.delay(SHORTDELAY);
+  DigiKeyboard.sendKeyStroke(KEY_ENTER);
+  DigiKeyboard.delay(SHORTDELAY);
+  DigiKeyboard.sendKeyStroke(43);
+  DigiKeyboard.delay(SHORTDELAY);
+  DigiKeyboard.sendKeyStroke(KEY_ENTER);
+  DigiKeyboard.delay(10000000000);
+  
+  // END TASK
+ for (;;){ 
+}
+
 }
