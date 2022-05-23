@@ -36,8 +36,15 @@ char LOGINUSERNAME[] = "YOUR-ENROLL-USERNAME";
 char LOGINPASSWORD[] = "YOUR-ENROLL-PASSWORD";
 
 DigiKeyboard.sendKeyStroke(0);
-DigiKeyboard.delay(MEDIUMDELAY);
+DigiKeyboard.delay(SHORTDELAY);
+// BYPASS CHROMEVOX
 
+DigiKeyboard.sendKeyStroke(KEY_Z,MOD_ALT_LEFT|MOD_CONTROL_LEFT);
+DigiKeyboard.delay(3000);
+DigiKeyboard.sendKeyStroke(KEY_Z,MOD_ALT_LEFT|MOD_CONTROL_LEFT);
+DigiKeyboard.delay(3000);
+
+// CONNECT TO WIFI
 DigiKeyboard.sendKeyStroke(KEY_ENTER);
 DigiKeyboard.delay(MEDIUMDELAY);
 DigiKeyboard.sendKeyStroke(KEY_S, MOD_ALT_LEFT | MOD_SHIFT_LEFT);
