@@ -1,4 +1,4 @@
-//Chromebook Powerwash v2
+//Chromebook Powerwash ChromeOS version 103
 
 #include "DigiKeyboard.h"
 
@@ -32,8 +32,8 @@ char WIFIPASSWORD[] = "YOUR-WIFI-PASSWORD";
 // LOGIN VARIABLES
 // REPLACE 
 
-char LOGINUSERNAME[] = "YOUR-ENROLL-USERNAME";
-char LOGINPASSWORD[] = "YOUR-ENROLL-PASSWORD";
+char LOGINUSERNAME[] = "YOUR-LOGIN-USERNAME";
+char LOGINPASSWORD[] = "YOUR-LOGIN-PASSWORD";
 
 DigiKeyboard.sendKeyStroke(0);
 DigiKeyboard.delay(SHORTDELAY);
