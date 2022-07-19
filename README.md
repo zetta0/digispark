@@ -55,6 +55,8 @@ Url: http://digistump.com/package_digistump_index.json
 
 sudo adduser $USER dialout
 
+```
+
 # UDEV Rules for Micronucleus boards including the Digispark.
 # This file must be placed at:
 #
@@ -71,8 +73,10 @@ KERNEL=="ttyACM*", ATTRS{idVendor}=="16d0", ATTRS{idProduct}=="0753", MODE:="066
 # idea of write permission for everybody, you can replace MODE:="0666" with
 # OWNER:="yourusername" to create the device owned by you, or with
 # GROUP:="somegroupname" and mange access using standard unix groups.
+```
 
+```
 sudo udevadm control --reload-rules
-
+```
 
 Will update this soon
