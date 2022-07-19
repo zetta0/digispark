@@ -107,6 +107,7 @@ DigiKeyboard.delay(SHORTDELAY);
 DigiKeyboard.sendKeyStroke(KEY_ENTER);
 DigiKeyboard.delay(LONGDELAY);
 DigiKeyboard.sendKeyStroke(KEY_ENTER);
+DigiKeyboard.delay(MEDIUMDELAY);
 
 // LOGIN
 
