@@ -49,11 +49,19 @@ Please replace this file with file located in this directory with the repo's ver
 
 # Linux
 
-Need to install libusb
+Need to install libusb through your package manager
 
 Url: http://digistump.com/package_digistump_index.json
 
 sudo adduser $USER dialout
+
+Create and save this file at:
+
+/etc/udev/rules.d/49-micronucleus.rules
+
+or
+
+/lib/udev/rules.d/49-micronucleus.rules
 
 ```
 
@@ -75,8 +83,10 @@ KERNEL=="ttyACM*", ATTRS{idVendor}=="16d0", ATTRS{idProduct}=="0753", MODE:="066
 # GROUP:="somegroupname" and mange access using standard unix groups.
 ```
 
+Use this command:
+
 ```
 sudo udevadm control --reload-rules
 ```
 
-Will update this soon
+Will update this soon as possible
