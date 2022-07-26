@@ -53,7 +53,11 @@ Need to install libusb through your package manager
 
 Url: http://digistump.com/package_digistump_index.json
 
+```
+
 sudo adduser $USER dialout
+
+```
 
 Create and save this file at:
 
